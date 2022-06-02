@@ -1,0 +1,16 @@
+.bgLoading {
+  position: fixed;
+  background-color: rgba(255, 255, 255 , 0.7);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1061;
+}
+.animatedLoading {
+  width: 450px;
+  height: 300px;
+}

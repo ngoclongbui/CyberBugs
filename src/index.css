@@ -1,0 +1,310 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none!important;
+}
+
+/*custom scrollbar*/
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* custom modal button */
+.createProjectModal .modalButton {
+  min-width: 120px;
+}
+
+.updateUserModal .modalButton {
+  min-width: 100px;
+}
+
+/* fix antd behind modal bootstrap */
+.ant-select-dropdown, .ant-popover, .ant-notification {
+  z-index: 1061 !important;
+}
+
+/* hidden control in input number */
+.inputLogin input[type=number]::-webkit-inner-spin-button, 
+.inputLogin input[type=number]::-webkit-outer-spin-button {  
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* fix background autofill */
+.inputLogin input:-webkit-autofill,
+.inputLogin input:-webkit-autofill:hover, 
+.inputLogin input:-webkit-autofill:focus, 
+.inputLogin input:-webkit-autofill:active
+{
+  color: #000000;
+  -webkit-text-fill-color: #78ACD1 !important;
+  transition: background-color 9999s !important;
+}
+
+/* fix style disabled button in login page */
+button.buttonLogin.ant-btn-primary[disabled],
+button.buttonLogin.ant-btn-primary[disabled]:active,
+button.buttonLogin.ant-btn-primary[disabled]:focus,
+.buttonLogin .ant-btn-primary[disabled]:hover {
+  color:  #78ACD1 !important;
+  border-color: #063C60 !important;
+  background: #063C60 !important;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+.btn-close:focus {
+  box-shadow:none!important
+}
+
+/* fix margin p tag on table in projectManagerCBB */
+.projectListDescription p {
+  margin: 0;
+}
+
+/*fix pagination on table in projectManagerCBB */
+.ant-pagination-next .ant-pagination-item-link,
+.ant-pagination-prev .ant-pagination-item-link {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+
+
+/* Login */
+.avatarLarge {
+  width: 80px;
+  height: 80px;
+}
+
+.avatarLarge img {
+  width: 100%;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.loginTitle {
+  font-size: 24px;
+  font-weight: lighter;
+  color: #78ACD1
+}
+
+.formLogin {
+  background-color: #0A5485;
+  border-radius: 10px;
+  
+}
+
+.inputLogin {
+  background-color: #063C60 !important;
+  color: #78ACD1 !important;
+  border-color: #1173BA !important;
+}
+
+.inputLogin input {
+  background-color: #063C60 !important;
+  color: #78ACD1 !important;
+  font-weight: lighter !important;
+}
+
+.loginLink {
+  color:#78ACD1
+}
+
+.loginLink:hover {
+  color:white
+}
+
+/* MenuCBB */
+
+.account {
+  display: flex;
+  padding: 15px;
+}
+
+.account .avatar {
+  margin-right: 10px;
+}
+
+.account .avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.account .accountInfo p:first-child {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.account .accountInfo p:last-child {
+  font-weight: 300;
+}
+
+.control {
+  padding: 15px 15px 50px 15px;
+  margin-bottom: 50px;
+  border-bottom: 2px solid #c4c5c6;
+}
+
+.control div {
+  color: black;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.control div:hover .navLink {
+  color: rgb(0, 174, 255);
+}
+
+.control div:hover i {
+  color: rgb(0, 174, 255);
+}
+
+.control .navLink {
+  color: black;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.control i {
+  width: 20px;
+  transition: 0.2s;
+}
+
+.control div span:first-child {
+  margin-right: 10px;
+}
+
+.control div span:first-child:focus {
+  background-color: #ebecf0;
+}
+
+.control div:focus {
+  color: royalblue;
+}
+
+.feature {
+  padding: 15px;
+  opacity: 0.5;
+}
+
+.feature div {
+  margin-bottom: 5px;
+}
+
+.feature i {
+  width: 20px;
+}
+
+.feature div span {
+  font-size: 14px;
+}
+
+/* Project Detail */
+.cardTask {
+  width: 17rem;
+  height: auto;
+  background-color: #F4F5F7;
+
+}
+
+.listTask {
+  max-height: 390px;
+  overflow-y: scroll;
+}
+
+/* Modal Edit Task */
+.headerEditTaskModal .dropdown-toggle::after {
+  display: none !important;
+}
+.headerEditTaskModal .taskTypeItem:hover,
+.bodyEditTaskModal .assigness:hover {
+  background-color: #f5f5f5;
+}
+
+.headerEditTaskModal .taskTypeItem.active {
+  background-color: #E6F7FF;
+}
+
+.headerEditTaskModal .iconTaskType {
+  width: 25px;
+}
+
+.bodyEditTaskModal .contentDescriptionTask {
+  max-height: 250px;
+}
+
+.bodyEditTaskModal .listCommentTask {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+.bodyEditTaskModal .assignees .member {
+  background-color:#efefef!important;
+  transition: 0.4s;
+}
+
+.bodyEditTaskModal .assignees .addMember:hover {
+  
+  color: #0098de !important;
+  transition: 0.4s;
+  
+}
+
+.bodyEditTaskModal .assignees .icon {
+  font-size: 16px;
+  margin-top: 2px;
+  
+}
+
+.bodyEditTaskModal .assignees .icon svg {
+  color: #000000 !important;
+  transition: 0.4s;
+}
+
+.bodyEditTaskModal .assignees .removeIcon:hover svg {
+  color: #de0000 !important;
+  transition: 0.4s;
+}
+
+.bodyEditTaskModal .assignees .member svg{
+  font-weight: lighter!important;
+  color: #222222;
+  vertical-align: baseline !important;
+  margin-left: -2px !important;
+}
+
+.bodyEditTaskModal .assignees .addMember {
+  width: 40px;
+  height: 40px;
+}
+
+.fa-bookmark {
+  color: #5fb03e;
+}
+
+.fa-bug {
+  color: #d85463;
+}
+
+.fa-check-square {
+  color: #62a0ce;
+}
+
+

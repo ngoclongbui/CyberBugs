@@ -1,0 +1,26 @@
+.bgBehind{
+  background-image: url("../../assets/CyberBugs/bgLogin.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bgFront{
+  background-image: url("../../assets/CyberBugs/bgLogin.jpg");
+  background-size: cover;
+  height: 90vh;
+  max-height: 768px;
+  box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.4)
+}
+
+.content {
+  background-color:#063C60;
+  height: 90vh;
+  max-height: 768px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.3), -20px 0px 30px rgba(0, 0, 0, 0.3)
+}
